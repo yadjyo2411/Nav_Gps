@@ -32,13 +32,16 @@
       type="text"
       placeholder="Search Box"
     />
+
+
+    <a class="direction-link" target="_blank" href="//maps.google.com/maps?f=d&amp;daddr=37.422230,-122.084058&amp;hl=en"> Get Directions</a>
     <div id="map"></div>
     
     
     
 
     <!----google map copied code-->
-    <a class="direction-link" target="_blank" href="//maps.google.com/maps?f=d&amp;daddr=37.422230,-122.084058&amp;hl=en"> Get Directions</a>
+    
     
     <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHaOwInNC-G2P1OF6stoIjhyGFnVwwFnc&callback=initAutocomplete&libraries=places&v=weekly"
@@ -59,7 +62,7 @@ function initAutocomplete() {
   const map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 20.5936, lng: 78.9695 },
     zoom: 13,
-    mapTypeId: "roadmap",
+    mapTypeId: "place",
   });
   // Create the search box and link it to the UI element.
   const input = document.getElementById("pac-input");
